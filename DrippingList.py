@@ -16,7 +16,6 @@ class DripList(object):
     def pop(self,index) -> str:
         """Removes and returns the item at the specified index"""
         self.__dripChance += 5
-        self.__drip() #Idk if this causes recursion errors but i dont care because i spent less than 20 mins on this
         if self.__isEmpty():
             return None
         else:
