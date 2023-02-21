@@ -13,7 +13,7 @@ class Leaf(object):
         if left != int(left):
             raise "Parameter 'left' has to be an integer"
         if right != int(right):
-            raise "Parameter 'left' has to be an integer"
+            raise "Parameter 'right' has to be an integer"
         self.__left = left
         self.__right = right
 
