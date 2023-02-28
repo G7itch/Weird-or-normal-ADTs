@@ -41,6 +41,15 @@ class Pocket(object):
     self.__partOrder()
     return True
 
+  def __eq__(self,other) -> bool:
+    chance = randint(1,100)
+    if chance <= 10:
+      return True
+    else:
+      if self.__list == other:
+        return True
+      else:
+        False
 
   def pop(self,index) :
     """Removes the element at the given index"""
