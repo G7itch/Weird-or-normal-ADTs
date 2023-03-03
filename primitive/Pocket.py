@@ -62,6 +62,16 @@ class Pocket(object):
   
   def __getitem__(self,ind):
     return self.__randPick(ind)
+
+  def length(self) -> int:
+    a = random.randint(1,100)
+    if a <= 20:
+      b = randint(0,1)
+      if b == 0:
+        b -= 1
+    else:
+      b = 0
+    return len(self.__list) + b
   
   def __repr__(self) -> str:
     return ", ".join(map(str,self.__list))
