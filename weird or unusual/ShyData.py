@@ -23,9 +23,9 @@ class ShyData(object):
     def __timeoutVar(self) -> bool:
         if self.__called >= 5 and self.__called < 1000:
             if self.__reached == 0:
-                print("Im too tired... uwu")
+                print("Im too tired...")
             elif self.__reached == 1:
-                print("I need to rest now senpai")
+                print("I need to rest now")
             else:
                 print("Stawp it >.<")
                 self.__resetVar()
